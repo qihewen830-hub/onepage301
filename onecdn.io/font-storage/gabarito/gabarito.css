@@ -1,0 +1,72 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400;
+  
+  src: local(''),
+    url('gabarito-regular.woff2') format('woff2'),
+       url('gabarito-regular.woff') format('woff'),
+       url('gabarito-regular.ttf') format('truetype'),
+       url('gabarito-regular.svg#Gabarito') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 500;
+  
+  src: local(''),
+    url('gabarito-500.woff2') format('woff2'),
+       url('gabarito-500.woff') format('woff'),
+       url('gabarito-500.ttf') format('truetype'),
+       url('gabarito-500.svg#Gabarito') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 600;
+  
+  src: local(''),
+    url('gabarito-600.woff2') format('woff2'),
+       url('gabarito-600.woff') format('woff'),
+       url('gabarito-600.ttf') format('truetype'),
+       url('gabarito-600.svg#Gabarito') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700;
+  
+  src: local(''),
+    url('gabarito-700.woff2') format('woff2'),
+       url('gabarito-700.woff') format('woff'),
+       url('gabarito-700.ttf') format('truetype'),
+       url('gabarito-700.svg#Gabarito') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 800;
+  
+  src: local(''),
+    url('gabarito-800.woff2') format('woff2'),
+       url('gabarito-800.woff') format('woff'),
+       url('gabarito-800.ttf') format('truetype'),
+       url('gabarito-800.svg#Gabarito') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 900;
+  
+  src: local(''),
+    url('gabarito-900.woff2') format('woff2'),
+       url('gabarito-900.woff') format('woff'),
+       url('gabarito-900.ttf') format('truetype'),
+       url('gabarito-900.svg#Gabarito') format('svg')
+}

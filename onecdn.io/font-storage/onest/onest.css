@@ -1,0 +1,108 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 100;
+  
+  src: local(''),
+    url('onest-100.woff2') format('woff2'),
+       url('onest-100.woff') format('woff'),
+       url('onest-100.ttf') format('truetype'),
+       url('onest-100.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 200;
+  
+  src: local(''),
+    url('onest-200.woff2') format('woff2'),
+       url('onest-200.woff') format('woff'),
+       url('onest-200.ttf') format('truetype'),
+       url('onest-200.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 300;
+  
+  src: local(''),
+    url('onest-300.woff2') format('woff2'),
+       url('onest-300.woff') format('woff'),
+       url('onest-300.ttf') format('truetype'),
+       url('onest-300.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  
+  src: local(''),
+    url('onest-regular.woff2') format('woff2'),
+       url('onest-regular.woff') format('woff'),
+       url('onest-regular.ttf') format('truetype'),
+       url('onest-regular.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 500;
+  
+  src: local(''),
+    url('onest-500.woff2') format('woff2'),
+       url('onest-500.woff') format('woff'),
+       url('onest-500.ttf') format('truetype'),
+       url('onest-500.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 600;
+  
+  src: local(''),
+    url('onest-600.woff2') format('woff2'),
+       url('onest-600.woff') format('woff'),
+       url('onest-600.ttf') format('truetype'),
+       url('onest-600.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 700;
+  
+  src: local(''),
+    url('onest-700.woff2') format('woff2'),
+       url('onest-700.woff') format('woff'),
+       url('onest-700.ttf') format('truetype'),
+       url('onest-700.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 800;
+  
+  src: local(''),
+    url('onest-800.woff2') format('woff2'),
+       url('onest-800.woff') format('woff'),
+       url('onest-800.ttf') format('truetype'),
+       url('onest-800.svg#Onest') format('svg')
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 900;
+  
+  src: local(''),
+    url('onest-900.woff2') format('woff2'),
+       url('onest-900.woff') format('woff'),
+       url('onest-900.ttf') format('truetype'),
+       url('onest-900.svg#Onest') format('svg')
+}
