@@ -35,13 +35,17 @@
 
 
 <script>
-    // 1. Elementi seçip yeni metni atama
-document.querySelector("#root > div > div > section.con-kit-organism.con-kit-section.banner.con-kit-section--type-default.con-kit-section--first > div > div > div.con-kit-frame > div > div > div > div.con-kit-row__container > div > div.con-kit-col.con-kit-col--first > div > div > div > div.con-kit-atom-plain-text > div.con-kit-component-text > div")
-.textContent = "%98 Müşteri Memnuniyeti | Evde Masaj Hizmeti";
+document.addEventListener("DOMContentLoaded", function() {
+    const firstElement = document.querySelector("#root > div > div > section.con-kit-organism.con-kit-section.banner.con-kit-section--type-default.con-kit-section--first > div > div > div.con-kit-frame > div > div > div > div.con-kit-row__container > div > div.con-kit-col.con-kit-col--first > div > div > div > div.con-kit-atom-plain-text > div.con-kit-component-text > div");
+    if (firstElement) {
+        firstElement.textContent = "%98 Müşteri Memnuniyeti | Evde Masaj Hizmeti";
+    }
 
-// 2. İkinci elementi seçip yeni metni atama
-document.querySelector("#root > div > div > section.con-kit-organism.con-kit-section.deckblatt.con-kit-section--type-default > div > div > div.con-kit-frame > div > div > div:nth-child(1) > div.con-kit-row__container > div > div.con-kit-col.con-kit-col--first > div > div > div:nth-child(3) > nav > ul > li:nth-child(3) > div > div > div.con-kit-atom-menu-v2-item-inside__text > div")
-.textContent = "Hijyenik, güvenli ve konforlu evde masaj";
+    const secondElement = document.querySelector("#root > div > div > section.con-kit-organism.con-kit-section.deckblatt.con-kit-section--type-default > div > div > div.con-kit-frame > div > div > div:nth-child(1) > div.con-kit-row__container > div > div.con-kit-col.con-kit-col--first > div > div > div:nth-child(3) > nav > ul > li:nth-child(3) > div > div > div.con-kit-atom-menu-v2-item-inside__text > div");
+    if (secondElement) {
+        secondElement.textContent = "Hijyenik, güvenli ve konforlu evde masaj";
+    }
+});
 </script>
 
 
