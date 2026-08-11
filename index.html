@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -598,6 +597,154 @@ body {
   font-size: 12px;
   color: var(--text-muted);
 }
+
+/* ===================== PRICING SECTION ===================== */
+.pricing-section {
+  text-align: center;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  align-items: center;
+}
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  text-align: left;
+  transition: all 0.3s;
+  position: relative;
+}
+.pricing-card:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-glow);
+}
+.pricing-card.popular {
+  border-color: var(--accent-gold);
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245, 197, 24, 0.05) 100%);
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(245, 197, 24, 0.15);
+}
+.pricing-card.popular:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+.pricing-badges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.badge-duration {
+  font-size: 12px;
+  font-weight: 800;
+  color: #b070ff;
+  background: rgba(176, 112, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+.badge-popular {
+  font-size: 11px;
+  font-weight: 800;
+  color: #1ec8a0;
+  background: rgba(30, 200, 160, 0.15);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+.pricing-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.pricing-price {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+.pricing-price span {
+  font-size: 24px;
+  color: var(--text-muted);
+}
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.pricing-features li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.5;
+}
+.pricing-features li::before {
+  content: '✓';
+  color: #1ec8a0;
+  font-weight: 900;
+  font-size: 16px;
+  background: rgba(30,200,160,0.15);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.btn-buy {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #0a0e1a;
+  color: var(--text-primary);
+  font-weight: 700;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid var(--border-subtle);
+}
+.btn-buy:hover {
+  background: var(--text-primary);
+  color: #0a0e1a;
+}
+.pricing-card.popular .btn-buy {
+  background: var(--accent-gold);
+  color: #0a0e1a;
+  border-color: var(--accent-gold);
+}
+.pricing-card.popular .btn-buy:hover {
+  background: #ffe066;
+}
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 40px auto 0;
+  }
+  .pricing-card.popular {
+    transform: none;
+  }
+  .pricing-card.popular:hover {
+    transform: translateY(-5px);
+  }
+}
+
 /* ===================== ARTICLE ===================== */
 .article-wrap {
   display: grid;
@@ -919,11 +1066,11 @@ body {
     </a>
 
     <nav class="header-nav" role="navigation" aria-label="Ana menü">
+      <a href="#paketler" class="nav-link">Paketler</a>
       <a href="#giris-rehberi" class="nav-link">Kurulum Rehberi</a>
-      <a href="#oyun-kategorileri" class="nav-link">Paketler</a>
       <a href="#Pusulabet-hakkinda" class="nav-link">Hakkımızda</a>
       <a href="#sss" class="nav-link">SSS</a>
-      <a href="#giris-rehberi" class="nav-cta" aria-label="IPTV Satın Al">IPTV Satın Al</a>
+      <a href="#paketler" class="nav-cta" aria-label="IPTV Satın Al">IPTV Satın Al</a>
     </nav>
 
     <button class="hamburger" id="hamburgerBtn" aria-label="Menüyü aç/kapat" aria-expanded="false">
@@ -932,8 +1079,8 @@ body {
   </div>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobil menü">
+    <a href="#paketler">Paketler</a>
     <a href="#giris-rehberi">Kurulum Rehberi</a>
-    <a href="#oyun-kategorileri">Paketler</a>
     <a href="#Pusulabet-hakkinda">Hakkımızda</a>
     <a href="#sss">SSS</a>
   </nav>
@@ -950,8 +1097,8 @@ body {
       Binlerce şifreli ve şifresiz kanal, en yeni filmler ve diziler tek bir tıkla ekranınızda. Donmasız, 4K kalitesinde yayınlarla televizyon keyfini zirveye taşıyın.
     </p>
     <div class="hero-actions">
-      <a href="#giris-rehberi" class="btn-primary">Paketleri İncele</a>
-      <a href="#oyun-kategorileri" class="btn-secondary">Ücretsiz Test Et</a>
+      <a href="#paketler" class="btn-primary">Paketleri İncele</a>
+      <a href="#paketler" class="btn-secondary">Ücretsiz Test Et</a>
     </div>
   </div>
 </section>
@@ -978,8 +1125,9 @@ body {
   </div>
 </section>
 
+
 <!-- ===== FEATURES ===== -->
-<section class="section" id="ozellikler" aria-label="Platform özellikleri">
+<section class="section section-alt" id="ozellikler" aria-label="Platform özellikleri">
   <div class="section-inner">
     <div class="section-label">Neden Biz?</div>
     <h2 class="section-title">IPTV Hizmetimizin Öne Çıkan <span>Özellikleri</span></h2>
@@ -1023,7 +1171,7 @@ body {
 </section>
 
 <!-- ===== CATEGORIES ===== -->
-<section class="section section-alt" id="oyun-kategorileri" aria-label="Oyun kategorileri">
+<section class="section" id="oyun-kategorileri" aria-label="Oyun kategorileri">
   <div class="section-inner">
     <div class="section-label">İçerikler</div>
     <h2 class="section-title">Zengin <span>İçerik Yelpazesi</span></h2>
@@ -1093,7 +1241,7 @@ body {
 </section>
 
 <!-- ===== ARTICLE ===== -->
-<section class="section" id="giris-rehberi" aria-label="IPTV kurulum makalesi">
+<section class="section section-alt" id="giris-rehberi" aria-label="IPTV kurulum makalesi">
   <div class="section-inner">
     <div class="section-label">IPTV Satın Al Rehberi</div>
     <h2 class="section-title"><span>IPTV Satın Al</span> Öncesi Bilmeniz Gerekenler</h2>
@@ -1184,8 +1332,86 @@ body {
   </div>
 </section>
 
+<!-- ===== PRICING SECTION ===== -->
+<section class="section pricing-section" id="paketler" aria-label="Fiyatlandırma Paketleri">
+  <div class="section-inner">
+    <h2 class="section-title">Size En Uygun <span>Paketi Seçin</span></h2>
+    
+    <div class="pricing-grid">
+      
+      <!-- Card Test -->
+      <div class="pricing-card">
+        <div class="pricing-badges">
+          <span class="badge-duration" style="color: #1ec8a0; background: rgba(30,200,160,0.15);">2 SAAT</span>
+          <span class="badge-popular" style="background:transparent; color:transparent;">-</span>
+        </div>
+        <h3 class="pricing-title">Ücretsiz IPTV Test</h3>
+        <div class="pricing-price">0<span>₺</span></div>
+        <ul class="pricing-features">
+          <li>Tüm kanallara erişim</li>
+          <li>Tüm film ve diziler</li>
+          <li>Kendi cihazınızda deneyin</li>
+          <li>Bağlantı hızınızı ölçün</li>
+        </ul>
+        <a href="https://kaliteplayer12.com/buying/test" class="btn-buy" rel="nofollow" style="background:#1ec8a0; color:#0a0e1a; border-color:#1ec8a0;">Hemen Test Et</a>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="pricing-card">
+        <div class="pricing-badges">
+          <span class="badge-duration">12 AY</span>
+          <span class="badge-popular" style="background:transparent;"></span>
+        </div>
+        <h3 class="pricing-title">IPTV Satın Al 12 Aylık VIP</h3>
+        <div class="pricing-price">3000<span>₺</span></div>
+        <ul class="pricing-features">
+          <li>VIP Sunucular + HIZLI</li>
+          <li>VIP Sunucular + Tüm Kanallar</li>
+          <li>Daha kaliteli sunuculardan hizmet almak isteyenlere özel. Seri daha hızlı.</li>
+          <li>Ücretsiz 2 saat test al</li>
+        </ul>
+        <a href="https://kaliteplayer12.com/#packages" class="btn-buy" rel="nofollow">Hemen Satın Al</a>
+      </div>
+
+      <!-- Card 2 (Popular) -->
+      <div class="pricing-card popular">
+        <div class="pricing-badges">
+          <span class="badge-duration">12 AY</span>
+          <span class="badge-popular">POPÜLER</span>
+        </div>
+        <h3 class="pricing-title">IPTV Satın Al 12 Aylık Paket</h3>
+        <div class="pricing-price">2200<span>₺</span></div>
+        <ul class="pricing-features">
+          <li>Tüm spor kanalları</li>
+          <li>Tüm film ve diziler</li>
+          <li>Kesintisiz 4K/FHD Kalite</li>
+          <li>Ücretsiz 2 saat test al</li>
+        </ul>
+        <a href="https://kaliteplayer12.com/#packages" class="btn-buy" rel="nofollow">Hemen Satın Al</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="pricing-card">
+        <div class="pricing-badges">
+          <span class="badge-duration">6 AY</span>
+        </div>
+        <h3 class="pricing-title">IPTV Satın Al 6 Aylık Paket</h3>
+        <div class="pricing-price">1700<span>₺</span></div>
+        <ul class="pricing-features">
+          <li>Tüm spor kanalları</li>
+          <li>Tüm film ve diziler</li>
+          <li>Kesintisiz 4K/FHD Kalite</li>
+          <li>Ücretsiz 2 saat test al</li>
+        </ul>
+        <a href="https://kaliteplayer12.com/#packages" class="btn-buy" rel="nofollow">Hemen Satın Al</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== ABOUT ===== -->
-<section class="section section-alt" id="Pusulabet-hakkinda" aria-label="IPTV hakkında bilgiler">
+<section class="section" id="Pusulabet-hakkinda" aria-label="IPTV hakkında bilgiler">
   <div class="section-inner">
     <div class="section-label">Hakkımızda</div>
     <h2 class="section-title">IPTV Satın Al <span>Platformu</span></h2>
@@ -1246,7 +1472,7 @@ body {
 </section>
 
 <!-- ===== FAQ ===== -->
-<section class="section" id="sss" aria-label="Sık sorulan sorular">
+<section class="section section-alt" id="sss" aria-label="Sık sorulan sorular">
   <div class="section-inner">
     <div class="section-label">SSS</div>
     <h2 class="section-title">IPTV Satın Al <span>SSS</span></h2>
